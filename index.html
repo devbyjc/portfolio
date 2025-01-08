@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Web Developer Portfolio - Jose Cardenas. Passionate about creating clean, responsive, and functional websites.">
+    <meta name="keywords" content="web developer, freelance developer, front-end developer, HTML, CSS, JavaScript, PHP, WordPress, LAMP stack, web design, responsive websites, user experience">
+    <meta name="author" content="Jose Cardenas">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#ffffff"> <!-- Useful for mobile browsers to adjust UI colors -->
+
+    <!-- Open Graph Meta Tags (For better social media sharing) -->
+    <meta property="og:title" content="Jose Cardenas - Freelance Frontend Developer">
+    <meta property="og:description" content="I am a web developer passionate about creating clean, responsive, and functional websites. I specialize in front-end technologies and have experience with WordPress and the LAMP stack.">
+    <meta property="og:image" content="images.jpg"> <!-- Thumbnail image when shared on social media -->
+    <meta property="og:url" content="https://www.devbyjc.com">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="DevbyJC">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Jose Cardenas - Freelance Frontend Developer">
+    <meta name="twitter:description" content="I am a web developer passionate about creating clean, responsive, and functional websites. I specialize in front-end technologies and have experience with WordPress and the LAMP stack.">
+    <meta name="twitter:image" content="image.jpg">
+    <meta name="twitter:creator" content="@devbyjc"> <!-- Add your Twitter handle here -->
+
+    <title>Freelance Web Developer | Jose Cardenas</title>
+
+    <!-- Google Fonts (Roboto) -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome (Icons) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+
+    <!-- Bootstrap CSS (For responsive layout and modern styling) -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Ensure all images inside .card-img-top have the same size */
+        .card-img-top {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        /* Styling social icons */
+        .social-icon {
+            width: 24px;
+            height: 24px;
+            margin-left: 10px;
+        }
+
+        /* Add padding-top to each section */
+        section {
+            padding-top: 80px; /* Adjust this value based on the height of your navbar */
+            padding-bottom: 60px;
+        }
+
+        #hero {
+            padding-top: 120px; /* Adjust for the larger hero section */
+        }
+
+        #about, #skills, #projects, #contact {
+            margin-top: 80px; /* Adjust based on the navbar height */
+        }
+
+        /* Adjust icon container for mobile view */
+        @media (max-width: 767px) {
+            .col-md-4.text-center.mb-4 {
+                display: flex;
+                flex-direction: column; /* Stack the icon and text vertically */
+                align-items: center;    /* Ensure the items are centered horizontally */
+                justify-content: center; /* Center vertically */
+                height: auto;           /* Allow dynamic height based on content */
+            }
+
+            /* Reduce the icon size on mobile */
+            .col-md-4.text-center.mb-4 i {
+                font-size: 3rem;  /* Adjust icon size for mobile (3rem is smaller) */
+                margin-bottom: 10px; /* Space between the icon and text */
+            }
+
+            /* Add padding for better spacing between the icons */
+            .col-md-4.text-center.mb-4 p {
+                margin-top: 10px; /* Add space above the text */
+            }
+        }
+    </style>
+</head>
+
+
+<body class="bg">
+
+    <!-- Sticky Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <!-- Logo as an image inside the navbar-brand -->
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/images/jclogo.png" alt="Logo" height="40"> <!-- Adjust height as necessary -->
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+
+                <!-- Social Icons Section -->
+                <div class="navbar-nav ml-3">
+                    <a href="https://github.com/devbyjc" target="_blank" class="nav-item nav-link">
+                        <i class="fab fa-github fa-lg social-icon"></i>
+                    </a>
+                    <a href="https://x.com/DevbyJlC" target="_blank" class="nav-item nav-link">
+                        <i class="fab fa-twitter fa-lg social-icon"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/jose-luis-cardenas-a0a283342/" target="_blank" class="nav-item nav-link">
+                        <i class="fab fa-linkedin fa-lg social-icon"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section text-center py-5">
+        <div class="container">
+            <img src="assets/images/josec259x259.jpg" width="259" height="259" class="avatar rounded-circle mb-4">
+            <h1 class="display-4">Hello, I'm Jose Cardenas</h1>
+            <p class="lead">I am a web developer passionate about creating clean, responsive, and functional websites. I specialize in front-end technologies and have experience with WordPress and the LAMP stack.</p>
+            <a href="#contact" class="btn btn-primary btn-lg">Hire Me</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">About Me</h2>
+            <p>Hello! I'm a web developer and designer with a passion for creating user-friendly, functional, and beautiful websites. I specialize in front-end technologies like HTML, CSS, JavaScript, and WordPress.</p>
+            <p>I have hands-on experience building websites using the <strong>LAMP stack</strong> (Linux, Apache, MySQL, PHP), and I’ve created dynamic websites and blogs using <strong>WordPress</strong>. My knowledge of the <strong>Adobe Creative Suite</strong> allows me to design visually appealing layouts and graphics, making sure the design aligns with your brand's vision.</p>
+            <p>When I'm not coding, I enjoy designing wireframes, mockups, and working with clients to bring their digital ideas to life. I pride myself on being a quick learner, an effective communicator, and someone who thrives on solving challenges and improving user experience.</p>
+        </div>
+    </section>
+
+    <div class="container">
+        <h1>My Course Timeline - Modesto Junior College</h1>
+        <ol class="timeline">
+            <li class="event">
+                <div class="date">January 2024</div>
+                <div class="course-info">
+                    <h3>Introduction to Computer Graphics</h3>
+                    <p>An introductory course on the basics of computer graphics, including 2D and 3D design concepts.</p>
+                </div>
+            </li>
+            <li class="event">
+                <div class="date">March 2024</div>
+                <div class="course-info">
+                    <h3>Frontend Development</h3>
+                    <p>I Learned HTML, CSS, and basic JavaScript to create static websites and web pages.</p>
+                </div>
+            </li>
+            <li class="event">
+                <div class="date">May 2024</div>
+                <div class="course-info">
+                    <h3>Adobe Suite</h3>
+                    <p>This course focused on graphic design and digital imaging using Adobe Photoshop.</p>
+                </div>
+            </li>
+            <li class="event">
+                <div class="date">August 2024</div>
+                <div class="course-info">
+                    <h3>Web Developer</h3>
+                    <p>Covered more advanced topics in web development including responsive design, frameworks, and APIs.</p>
+                </div>
+            </li>
+            
+        </ol>
+    </div>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Skills</h2>
+            <div class="row">
+                <!-- HTML Skill -->
+                <div class="col-md-4 text-center mb-4">
+                    <i class="fab fa-html5 fa-4x mb-3"></i>
+                    <p>HTML</p>
+                </div>
+                <!-- CSS Skill -->
+                <div class="col-md-4 text-center mb-4">
+                    <i class="fab fa-css3-alt fa-4x mb-3"></i>
+                    <p>CSS</p>
+                </div>
+                <!-- JavaScript Skill -->
+                <div class="col-md-4 text-center mb-4">
+                    <i class="fab fa-js-square fa-4x mb-3"></i>
+                    <p>JavaScript</p>
+                </div>
+                <!-- WordPress Skill -->
+                <div class="col-md-4 text-center mb-4">
+                    <i class="fab fa-wordpress fa-4x mb-3"></i>
+                    <p>WordPress</p>
+                </div>
+                <!-- PHP Skill -->
+                <div class="col-md-4 text-center mb-4">
+                    <i class="fab fa-php fa-4x mb-3"></i>
+                    <p>PHP</p>
+                </div>
+                <!-- Bootstrap Skill -->
+                <div class="col-md-4 text-center mb-4">
+                    <i class="fab fa-bootstrap fa-4x mb-3"></i>
+                    <p>Bootstrap</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Projects</h2>
+            <p class="text-center mb-5">Check out some of my recent projects:</p>
+
+            <!-- Projects Gallery -->
+            <div class="row">
+                <!-- Project 1 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card shadow-sm border-light">
+                        <img src="assets/images/rocket.jpg" alt="Project 1" class="card-img-top" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title">Project 1 - Graphic Design</h5>
+                            <p class="card-text">Vector Rocket Ship with Clouds</p>
+                            <a href="images/movieposter.jpg">
+                            <button class="btn btn-primary" data-toggle="modal" data-target="#projectModal1">View
+                                Details</button>
+                        </a>                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card shadow-sm border-light">
+                        <img src="assets/images/mycustomtheme.png" alt="Project 2" class="card-img-top" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title">Project 2 - Wordpress Theme</h5>
+                            <p class="card-text"> HTML to Custom Wordpress Theme.</p>
+                            <button class="btn btn-primary" data-toggle="modal" data-target="#projectModal2">View
+                                Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card shadow-sm border-light">
+                        <img src="assets/images/UIsite.png" alt="Project 3" class="card-img-top" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title">Project 3 - UI Design</h5>
+                            <p class="card-text">Design the UI with Figma.</p>
+                            <button class="btn btn-primary" data-toggle="modal" data-target="#projectModal3">View
+                                Details</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Contact</h2>
+            <p class="text-center mb-5">Feel free to reach out to me for any inquiries, project ideas, or just a casual chat!</p>
+
+            <!-- Contact Form -->
+            <form action="send_email.php" method="POST">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email address</label>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea class="form-control" id="message" name="message" rows="4" placeholder="Write your message" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="custom-footer text-white text-center py-4">
+        <div class="container">
+            <!-- Logo and Name -->
+            <div class="mb-3">
+                <h4 class="d-inline-block ml-2">DevbyJC</h4>
+            </div>
+    
+            <!-- Oversized Logo in Footer -->
+            <div class="mb-4">
+                <img src="ur image goes here" alt="Logo" class="footer-logo">
+            </div>
+    
+            <!-- Contact Information -->
+            <p class="footer">Email: <a href="mailto:josecardenas@example.com">contact@devbyjc.com</a></p>
+            
+    
+            <!-- Social Icons -->
+            <div class="my-3">
+                <a href="https://github.com" target="_blank" class="text-white mx-2">
+                    <i class="fab fa-github fa-2x"></i>
+                </a>
+                <a href="https://x.com/DevbyJlC" target="_blank" class="text-white mx-2">
+                    <i class="fab fa-twitter fa-2x"></i>
+                </a>
+                <a href="https://linkedin.com/in/jose-luis-cardenas-a0a283342/" target="_blank" class="text-white mx-2">
+                    <i class="fab fa-linkedin fa-2x"></i>
+                </a>
+            </div>
+    
+            <!-- Copyright -->
+            <p class="mb-0">&copy; 2024&nbsp; DevbyJC | All rights reserved.</p>
+        </div>
+    </footer>
+    
+
+
+    <!-- Smooth Scroll JavaScript -->
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+
+                window.scrollTo({
+                    top: targetElement.offsetTop - 80, // 80px offset (navbar height)
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
